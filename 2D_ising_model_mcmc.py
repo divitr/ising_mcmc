@@ -127,13 +127,13 @@ def calculate_burn_in(n_init = 500, lattice = cold_start()):
             print(f"Converged Value: {average_energy_history[-1]}")
             return i, average_energy_history[-1], lattice
 
-    plt.plot(energy_history[:len(average_energy_history)], label='Energy')
-    plt.plot(average_energy_history, label='Average Energy')
-    plt.title("BURN-IN TIME (0.5% tolerance)")
-    plt.legend(loc='upper right')
-    plt.xlabel("Number of Sweeps")
-    plt.ylabel("Lattice Energy")
-    plt.show()
+    # plt.plot(energy_history[:len(average_energy_history)], label='Energy')
+    # plt.plot(average_energy_history, label='Average Energy')
+    # plt.title("BURN-IN TIME (0.5% tolerance)")
+    # plt.legend(loc='upper right')
+    # plt.xlabel("Number of Sweeps")
+    # plt.ylabel("Lattice Energy")
+    # plt.show()
 
 #----------------------------------------------------------------------#
 # Lag Time / Autocorrelation
